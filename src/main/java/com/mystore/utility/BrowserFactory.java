@@ -29,10 +29,12 @@ public static WebDriver startApplication(WebDriver driver,String browserName, St
 			{
 			System.out.println("Does not support this browser");
 			}
-			driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
-			driver.get(appURL);
+			driver.manage().deleteAllCookies();
 			driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+			driver.get(appURL);
+			
 			return driver;
 	}
 	

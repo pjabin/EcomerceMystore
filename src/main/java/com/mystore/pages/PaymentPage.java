@@ -7,6 +7,7 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 import com.mystore.base.BaseClass;
+import com.mystore.utility.Helper;
 
 public class PaymentPage extends BaseClass{
 	
@@ -17,7 +18,7 @@ public class PaymentPage extends BaseClass{
 		
 	}
 	public OrderSummary clickOnPaymentMethod() {
-		
+		Helper.scrollByVisibilityOfElement(driver, bankWireMethod);
 		bankWireMethod.click();
 		return new  OrderSummary(driver);
 	}

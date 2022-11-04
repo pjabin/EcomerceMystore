@@ -18,7 +18,7 @@ public class OrderSummary extends BaseClass{
 		
 	}
 	public OrderConfirmationPage clickConfirmOrderBtn() {
-		Helper.fluentWait(driver, confirmOrderButton, 10);
+		Helper.scrollByVisibilityOfElement(driver, confirmOrderButton);
 		confirmOrderButton.click();
 		return new OrderConfirmationPage(driver);
 	}

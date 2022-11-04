@@ -1,145 +1,51 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 21, Failures: 11, Errors: 0, Skipped: 5, Time elapsed: 1,033.074 s <<< FAILURE! - in TestSuite
-com.mystore.test.IndexPageTest.setUp  Time elapsed: 122.89 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'ABIN-PC', ip: '192.168.0.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:50972
-Caused by: java.net.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:50972
-Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:50972
-Caused by: java.net.ConnectException: Connection refused: no further information
-
-com.mystore.test.SearchResultPageTest.tearDown  Time elapsed: 32.58 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-Timed out waiting for driver server to stop.
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'ABIN-PC', ip: '192.168.0.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fb69100d1463e58c873ae04f814a31dc, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\abinpj\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60240}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60240/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fb69100d1463e58c873ae04f814a31dc
-Caused by: java.util.concurrent.ExecutionException: 
-org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'ABIN-PC', ip: '192.168.0.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.17'
-Driver info: driver.version: unknown
-Caused by: org.openqa.selenium.TimeoutException: 
-Process timed out after waiting for 20000 ms.
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'ABIN-PC', ip: '192.168.0.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.17'
-Driver info: driver.version: unknown
-
-com.mystore.test.HomePageTest.WishListTest  Time elapsed: 83.503 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='login']"}
-  (Session info: chrome=107.0.5304.88)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'ABIN-PC', ip: '192.168.0.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d8e09d202ec5434d7b24db44e750ecc8, findElement {using=xpath, value=//a[@class='login']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\abinpj\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60388}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60388/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d8e09d202ec5434d7b24db44e750ecc8
-	at com.mystore.test.HomePageTest.WishListTest(HomePageTest.java:19)
-
-com.mystore.test.HomePageTest.tearDown  Time elapsed: 110.37 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-Timed out waiting for driver server to stop.
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'ABIN-PC', ip: '192.168.0.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d8e09d202ec5434d7b24db44e750ecc8, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\abinpj\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60388}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60388/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d8e09d202ec5434d7b24db44e750ecc8
-Caused by: java.util.concurrent.ExecutionException: 
-org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'ABIN-PC', ip: '192.168.0.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.17'
-Driver info: driver.version: unknown
-Caused by: org.openqa.selenium.TimeoutException: 
-Process timed out after waiting for 20000 ms.
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'ABIN-PC', ip: '192.168.0.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.17'
-Driver info: driver.version: unknown
-
-com.mystore.test.AddToCartTest.tearDown  Time elapsed: 34.236 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-Timed out waiting for driver server to stop.
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'ABIN-PC', ip: '192.168.0.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cdf9133686d9cfea90ac65c57cd627ce, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\abinpj\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60648}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60648/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: cdf9133686d9cfea90ac65c57cd627ce
-Caused by: java.util.concurrent.ExecutionException: 
-org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'ABIN-PC', ip: '192.168.0.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.17'
-Driver info: driver.version: unknown
-Caused by: org.openqa.selenium.TimeoutException: 
-Process timed out after waiting for 20000 ms.
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'ABIN-PC', ip: '192.168.0.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.17'
-Driver info: driver.version: unknown
-
-com.mystore.test.OrderPageTest.tearDown  Time elapsed: 45.341 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-Timed out waiting for driver server to stop.
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'ABIN-PC', ip: '192.168.0.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f438844168924530719629e2d191ebba, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\abinpj\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60796}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60796/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f438844168924530719629e2d191ebba
-Caused by: java.util.concurrent.ExecutionException: 
-org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'ABIN-PC', ip: '192.168.0.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.17'
-Driver info: driver.version: unknown
-Caused by: org.openqa.selenium.TimeoutException: 
-Process timed out after waiting for 20000 ms.
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'ABIN-PC', ip: '192.168.0.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.17'
-Driver info: driver.version: unknown
-
-com.mystore.test.AccountCreationPageTest.setUp  Time elapsed: 70.499 s  <<< FAILURE!
+Tests run: 18, Failures: 6, Errors: 0, Skipped: 6, Time elapsed: 383.158 s <<< FAILURE! - in TestSuite
+com.mystore.test.AddToCartTest.setUp  Time elapsed: 67.896 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: 
-timeout: Timed out receiving message from renderer: 13.130
+timeout: Timed out receiving message from renderer: 9.942
   (Session info: chrome=107.0.5304.88)
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'ABIN-PC', ip: '192.168.0.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e3cb379a7bc53335f72976c9083bd697, get {url=http://automationpractice.com/index.php}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\abinpj\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60921}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60921/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e3cb379a7bc53335f72976c9083bd697
+Command: [3bc5b0cf27f57c3beb91f1294c531c6a, get {url=http://automationpractice.com/index.php}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\abinpj\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56449}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56449/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3bc5b0cf27f57c3beb91f1294c531c6a
 
-com.mystore.test.LoginPageTest.loginTest[gdhasgdg, agsdhsgh](2)  Time elapsed: 90.154 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='login']"}
+com.mystore.test.OrderPageTest.setUp  Time elapsed: 21.977 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 15.777
   (Session info: chrome=107.0.5304.88)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'ABIN-PC', ip: '192.168.0.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [285e4d4ae6a48e1d88ba4d31c5eaf654, findElement {using=xpath, value=//a[@class='login']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\abinpj\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60988}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60988/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 285e4d4ae6a48e1d88ba4d31c5eaf654
-	at com.mystore.test.LoginPageTest.loginTest(LoginPageTest.java:21)
+Command: [5f53c685d9407a1a211d571d6c6add8b, get {url=http://automationpractice.com/index.php}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\abinpj\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56492}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56492/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f53c685d9407a1a211d571d6c6add8b
 
-com.mystore.test.LoginPageTest.tearDown  Time elapsed: 115.375 s  <<< FAILURE!
+com.mystore.test.AccountCreationPageTest.verifyCreateAccountPageTest[hnmkl@gmail.com](1)  Time elapsed: 28.281 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'ABIN-PC', ip: '192.168.0.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d2fd2485b38073219b56ac4889aadd5d, clickElement {id=9cf5aa82-cc8c-4a35-a53d-2db3235b2f8b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\abinpj\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56539}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56539/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d2fd2485b38073219b56ac4889aadd5d)] -> xpath: //a[@class='login']]
+Session ID: d2fd2485b38073219b56ac4889aadd5d
+	at com.mystore.test.AccountCreationPageTest.verifyCreateAccountPageTest(AccountCreationPageTest.java:20)
+
+com.mystore.test.AccountCreationPageTest.tearDown  Time elapsed: 54.395 s  <<< FAILURE!
 org.openqa.selenium.WebDriverException: 
 Timed out waiting for driver server to stop.
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'ABIN-PC', ip: '192.168.0.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [285e4d4ae6a48e1d88ba4d31c5eaf654, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\abinpj\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60988}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60988/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 285e4d4ae6a48e1d88ba4d31c5eaf654
+Command: [d2fd2485b38073219b56ac4889aadd5d, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\abinpj\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56539}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56539/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d2fd2485b38073219b56ac4889aadd5d
 Caused by: java.util.concurrent.ExecutionException: 
 org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
@@ -151,36 +57,18 @@ Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'ABIN-PC', ip: '192.168.0.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.17'
 Driver info: driver.version: unknown
 
-com.mystore.test.EndToEndTest.endToEndTest  Time elapsed: 127.034 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"#processAddress"}
-  (Session info: chrome=107.0.5304.88)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'ABIN-PC', ip: '192.168.0.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6b9b01af15e0e820d7524d94eea9e266, findElement {using=id, value=processAddress}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\abinpj\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61269}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61269/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6b9b01af15e0e820d7524d94eea9e266
-	at com.mystore.test.EndToEndTest.endToEndTest(EndToEndTest.java:46)
+com.mystore.test.LoginPageTest.loginTest[gdhasgdg, agsdhsgh](2)  Time elapsed: 17.233 s  <<< FAILURE!
+java.lang.AssertionError: expected [http://automationpractice.com/index.php?controller=my-account] but found [http://automationpractice.com/index.php?controller=authentication]
+	at com.mystore.test.LoginPageTest.loginTest(LoginPageTest.java:28)
 
-com.mystore.test.EndToEndTest.tearDown  Time elapsed: 157.478 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-Timed out waiting for driver server to stop.
+com.mystore.test.EndToEndTest.setUp  Time elapsed: 42.822 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 5.275
+  (Session info: chrome=107.0.5304.88)
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'ABIN-PC', ip: '192.168.0.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6b9b01af15e0e820d7524d94eea9e266, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\abinpj\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61269}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61269/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6b9b01af15e0e820d7524d94eea9e266
-Caused by: java.util.concurrent.ExecutionException: 
-org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'ABIN-PC', ip: '192.168.0.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.17'
-Driver info: driver.version: unknown
-Caused by: org.openqa.selenium.TimeoutException: 
-Process timed out after waiting for 20000 ms.
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'ABIN-PC', ip: '192.168.0.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.17'
-Driver info: driver.version: unknown
+Command: [47f66c01be361a44282cac3b8cd6d352, get {url=http://automationpractice.com/index.php}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\abinpj\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56803}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56803/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 47f66c01be361a44282cac3b8cd6d352
 

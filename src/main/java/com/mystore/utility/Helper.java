@@ -90,5 +90,11 @@ public class Helper extends BaseClass{
 		return flag;
 	}
 	
+	public static void scrollByVisibilityOfElement(WebDriver driver, WebElement ele) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView();", ele);
+
+	}
+
 	
 }

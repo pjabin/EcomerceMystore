@@ -15,6 +15,15 @@
           <include name="loginTest" invocation-numbers="1"/>
         </methods>
       </class> <!-- com.mystore.test.LoginPageTest -->
+      <class name="com.mystore.test.OrderPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="afterSuite"/>
+          <include name="setupSuite"/>
+          <include name="verifyTotalPrice"/>
+        </methods>
+      </class> <!-- com.mystore.test.OrderPageTest -->
       <class name="com.mystore.test.EndToEndTest">
         <methods>
           <include name="tearDown"/>
@@ -24,34 +33,24 @@
           <include name="setupSuite"/>
         </methods>
       </class> <!-- com.mystore.test.EndToEndTest -->
-      <class name="com.mystore.test.IndexPageTest">
+      <class name="com.mystore.test.AddToCartTest">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="afterSuite"/>
+          <include name="addToCartTest"/>
           <include name="setupSuite"/>
-          <include name="verifyLogo"/>
-          <include name="verifyTitle"/>
         </methods>
-      </class> <!-- com.mystore.test.IndexPageTest -->
+      </class> <!-- com.mystore.test.AddToCartTest -->
       <class name="com.mystore.test.AccountCreationPageTest">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="afterSuite"/>
           <include name="setupSuite"/>
-          <include name="verifyCreateAccountPageTest"/>
+          <include name="verifyCreateAccountPageTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.mystore.test.AccountCreationPageTest -->
-      <class name="com.mystore.test.HomePageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="afterSuite"/>
-          <include name="WishListTest"/>
-          <include name="setupSuite"/>
-        </methods>
-      </class> <!-- com.mystore.test.HomePageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

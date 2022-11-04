@@ -16,6 +16,7 @@ public class HomePage extends BaseClass {
 		this.driver=ldriver;
 	}
 	public boolean validateWishlist() {
+		
 		return myWishlist.isDisplayed();
 		
 	}

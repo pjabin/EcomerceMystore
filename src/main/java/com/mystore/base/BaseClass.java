@@ -26,7 +26,7 @@ public class BaseClass {
 	public void setupSuite() throws IOException {
 		ExtentManager.setExtent();
 	}
-	@BeforeClass(groups={"Smoke","Sanity","Regression"})
+	@BeforeMethod(groups={"Smoke","Sanity","Regression"})
 	public void setUp()
 	{
 		con=new ConfigDataProvider();
@@ -34,7 +34,7 @@ public class BaseClass {
 	
 	}
 	
-	@AfterClass(groups={"Smoke","Sanity","Regression"})
+	@AfterMethod(groups={"Smoke","Sanity","Regression"})
 	public void tearDown(){
 		BrowserFactory.quitBrowser(driver);
 	}

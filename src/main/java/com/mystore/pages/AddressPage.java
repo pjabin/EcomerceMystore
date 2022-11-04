@@ -10,15 +10,15 @@ import com.mystore.utility.Helper;
 
 public class AddressPage extends BaseClass {
 
-	@FindBy(how = How.ID, using = "processAddress") WebElement proceedToCheckOut;
+	@FindBy(xpath="//span[text()='Proceed to checkout']")  WebElement proceedToCheck;
 	public AddressPage(WebDriver ldriver) {
 		
 		this.driver=ldriver;
 	}
 	
 	public ShippingPage clickOnCheckOut() {
-		Helper.fluentWait(driver, proceedToCheckOut, 10);
-		proceedToCheckOut.click();
+		Helper.scrollByVisibilityOfElement(driver, proceedToCheck);
+		proceedToCheck.click();
 		return new ShippingPage(driver);
 	}
 }

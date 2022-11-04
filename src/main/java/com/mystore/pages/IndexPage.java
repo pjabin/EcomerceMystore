@@ -10,7 +10,7 @@ import com.mystore.utility.Helper;
 
 public class IndexPage extends BaseClass {
 
-	@FindBy(how = How.XPATH, using = "//a[@class='login']") WebElement signInBtn;
+	@FindBy(xpath="//a[@class='login']") WebElement signInBtn;
 	@FindBy(xpath = "//img[@class='logo img-responsive']") WebElement myStoreLogo;
 	@FindBy(how = How.ID, using = "search_query_top") WebElement searchProductBox;
 	@FindBy(how = How.NAME, using = "submit_search") WebElement searchButton;
